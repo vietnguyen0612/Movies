@@ -1,0 +1,88 @@
+@import '../../global.scss';
+
+.intro {
+    background-color: rgb(17,17,17);
+    color: white;
+    position: relative;
+    padding: 30%;
+    z-index: 0;
+    .video__intro {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    .info {
+        position: absolute;
+        top: 200px;
+        left: 30px;
+        @include mobile {
+            top: 100px;
+            left: 15px;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 45px;
+            @include tablet {
+                font-size: 35px;
+            }
+            @include mobile {
+                font-size: 25px;
+            }
+        }
+        p {
+            font-size: 16px;
+            max-width: 400px;
+            @include tablet {
+                font-size: 16px;
+                max-width: 280px;
+            }
+            @include mobile {
+                font-size: 12px;
+                max-width: 200px;
+            }
+        }
+    }
+
+    .btn {
+        position: absolute;
+        top: 50%;
+        right: 10%;
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+        color: #bbb;
+        cursor: pointer;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        z-index: 2;
+        transition: all 0.3s ease;
+
+        @include tablet {
+            width: 30px;
+            height: 30px;
+            padding: 4px;
+        }
+
+        @include mobile {
+            width: 20px;
+            height: 20px;
+            padding: 2px;
+            z-index: 2;
+        }
+        &:hover {
+            color: #fff;
+            transform: scale(1.1);
+            background-color: rgba(211,211,211,0.18);
+        }
+    }
+    .fadeBottom  {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;  
+        background-image: linear-gradient(180deg, transparent, rgba(15,15,15,0.6) 40%, rgb(17,17,17),rgb(17,17,17));
+    }
+}
