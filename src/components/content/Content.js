@@ -59,14 +59,14 @@ function Content() {
         if(isDrag) {
             if(dragDown > dragMovie) {
                 // console.log('sang phải')
-                // handleClickSlider('')
-                sliderRef.current.scrollLeft +=(dragDown - dragMovie)
+                handleClickSlider('')
+                // sliderRef.current.scrollLeft +=(dragDown - dragMovie)
                 
             }
             if(dragDown < dragMovie) {
-                // handleClickSlider('left')
+                handleClickSlider('left')
                 // console.log('sang trái')
-                sliderRef.current.scrollLeft -= (dragMovie - dragDown)
+                // sliderRef.current.scrollLeft -= (dragMovie - dragDown)
 
             }
         }

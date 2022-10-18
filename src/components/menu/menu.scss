@@ -1,0 +1,19 @@
+.menu {
+    position: fixed;
+    top: 20%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 30px;
+    overflow: hidden;
+    transition: all .5s ease;
+
+    &:hover {
+        width: 170px;
+        background-color: rgba(0, 0, 0, 0.6);
+
+    }
+    
+
+}
